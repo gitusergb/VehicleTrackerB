@@ -26,7 +26,7 @@ app.get('/', (req, res) => {
     routes: {
       routeData: "/api/route", //  vehicle route data
       travelHistory: "/api/history", //travel history
-      vehicleStatus: "/api/route", // vehicle's current status
+      vehicleStatus: "/api/location", // vehicle's current status
     },
   });
 });

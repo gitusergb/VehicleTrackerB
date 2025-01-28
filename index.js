@@ -20,6 +20,17 @@ const locationData = [
 // // OR Load dummy data
 // const data = JSON.parse(fs.readFileSync("dummy_data.json", "utf-8"));
 
+app.get('/', (req, res) => {
+  res.json({
+    message: "Welcome to the Vehicle Tracker API!",
+    routes: {
+      routeData: "/api/route", //  vehicle route data
+      travelHistory: "/api/history", //travel history
+      vehicleStatus: "/api/route", // vehicle's current status
+    },
+  });
+});
+
 
 let currentIndex = 0;
 
